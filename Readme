@@ -1,0 +1,5 @@
+mvn test -Dcucumber.options="--name '<include scenario name here>'"
+
+mvn test -Dcucumber.options="classpath:features/login/login.feature:12"
+
+mvn test -Dcucumber.options="--tags @my-unique-tag"
