@@ -12,12 +12,10 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <lombok.version>1.16.10</lombok.version>
-        <selenide.version>4.2</selenide.version>
+        <lombok.version>1.18.2</lombok.version>
+        <selenide.version>4.14.1</selenide.version>
         <junit.version>4.12</junit.version>
-        <cucumber-java8.version>1.2.5</cucumber-java8.version>
         <cucumber-junit.version>1.2.5</cucumber-junit.version>
-        <htmlelements-java.version>1.17</htmlelements-java.version>
 
     </properties>
 
@@ -76,13 +74,6 @@
         </dependency>
 
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java8</artifactId>
-            <version>${cucumber-java8.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
@@ -92,14 +83,14 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber-junit.version}</version>
-            <scope>test</scope>
+            <version>1.2.5</version>
         </dependency>
 
+        <!--Dependency Injection with Picocontainer for cucumber-->
         <dependency>
-            <groupId>ru.yandex.qatools.htmlelements</groupId>
-            <artifactId>htmlelements-java</artifactId>
-            <version>${htmlelements-java.version}</version>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>1.2.5</version>
         </dependency>
 
     </dependencies>
